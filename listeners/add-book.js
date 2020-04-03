@@ -14,5 +14,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
       let book = new Book(title, author, isbn);
       // Add a Book 
       addBookToList(book);
+      // Store books
+      store.addBook(book);
     }
 });
