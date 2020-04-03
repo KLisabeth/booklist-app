@@ -16,5 +16,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
       addBookToList(book);
       // Store books
       store.addBook(book);
+      // Show alerts
+      showAlert('Book Added', 'success')
     }
 });
